@@ -7,4 +7,5 @@ console.log(null > 0)    // false
 console.log(null == 0)    // false
 console.log(null >= 0)    // true
 
+
 // We have strict check (===) --> Not only checks values but also data type
