@@ -40,3 +40,11 @@ const myFunction = function(){
 }
 
 console.log(typeof variable);
+
+//******************* Memory ******************
+
+// Stack (Primitive) , Heap (Non-Primitive)
+let myTest1 = "abc"
+
+let myTest2 = myTest1
+
