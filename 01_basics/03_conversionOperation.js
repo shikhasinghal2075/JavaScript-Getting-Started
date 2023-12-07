@@ -27,5 +27,26 @@ console.log(valueInBoolean);
 let someNumber = 33
 
 let valueInString = String(someNumber)
-console.log(typeof valueInString)
-console.log(valueInString)
+console.log(typeof valueInString);
+console.log(valueInString);
+
+
+// ************** Operations ****************************
+let value = 3;
+let negValue = -value;
+console.log(negValue);
+
+let str1 = "Hello"
+let str2 = " World!"
+
+let str3 = str1 + str2
+console.log(str3)
+// Below examples are malpractices --> use parenthesis instead
+console.log("1" + 2)        //12
+console.log(1 + "2")        //12
+console.log("1" + 2 + 2)    //122
+console.log(1 + 2 + "2")    //32
+console.log(+true)          //1
+console.log(+"")            //0
+console.log(true)           //true  
+
