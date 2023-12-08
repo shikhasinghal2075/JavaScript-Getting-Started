@@ -47,4 +47,18 @@ console.log(typeof variable);
 let myTest1 = "abc"
 
 let myTest2 = myTest1
+myTest2 = "change string"
+console.log(myTest2)
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "test@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
 
