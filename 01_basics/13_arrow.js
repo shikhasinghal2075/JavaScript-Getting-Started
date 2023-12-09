@@ -25,7 +25,7 @@ const addTwoNumbers = (num1,num2) => {
     return (num1+num2)
 }
 // you can write above function as for single line function
-const addTwoNumbersAnotherWay = (num1,num2) => num1+num2
+const addTwoNumbersAnotherWay = (num1,num2) => (num1+num2)
 
 console.log(addTwoNumbersAnotherWay(3,4))         //7
 
