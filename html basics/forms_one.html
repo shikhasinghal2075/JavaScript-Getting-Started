@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms 1</title>
+    <style>
+        body {
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="url" method="GET" accept-charset="utf-8" autocomplete="off" enctype="text/plain">
+        <label for="">First Name</label>
+        <input type="text" name="" id="fname" placeholder="first name">
+        <br><br>
+        <label for="">Last Name</label>
+        <input type="text" name="" id="lname" placeholder="last name">
+        <br><br>
+        <input type="week" name="" id="">
+        <br><br>
+
+        <select name="Editors" id="" multiple>
+            <option value="VSCode">VSCode</option>
+            <option value="CCS">Code Composer Studio</option>
+            <option value="Eclipse">Eclipse</option>
+        </select>
+
+        <br><br>
+        <input list="Editors" name="Editors">
+        <datalist id="Editors">
+            <option value="VSCode">VSCode</option>
+            <option value="CCS">Code Composer Studio</option>
+            <option value="Eclipse">Eclipse</option>
+        </datalist>
+        <br><br>
+
+        <input type="reset" value="Reset">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
