@@ -62,3 +62,19 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+## Project 3 Solution
+```javascript
+// Two methods to get clock
+const clock = document.getElementById('clock');
+//const clock = document.querySelector('#clock');
+
+// Runs every second
+setInterval(function () {
+  let date = new Date();
+  // console.log(date.toLocaleString());
+
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
+```
