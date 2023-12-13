@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+// Add Element
+
+    // Basic method to add element using function --> it is a problem as to append a child it has to traverse throgh whole tree which is not optimised
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Cpp")
+
+    // Optimised method to add language --> you need to traverse through tree --> directly append element
+    function addOptiLang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang("Ruby")
+    addOptiLang("Java")
+
+// Edit Element
+    const secondLang = document.querySelector("li:nth-child(2)")
+
+    console.log(secondLang)
+    // secondLang.innerHTML = "Mojo"    // First approach --> less optimised
+
+    // Second Approach --> Optimised than first approach
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+
+    //Third approach
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>C</li>'
+
+// Remove Element
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
