@@ -6,7 +6,7 @@
 ## Project 1 Link
 ```javascript
 const buttons = document.querySelectorAll('.button'); // Returns Node List
-// console.log(buttons);
+
 const body = document.querySelector('body');
 
 buttons.forEach(function (button) {
