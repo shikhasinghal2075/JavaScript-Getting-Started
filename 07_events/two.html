@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Code | Basics</title>
+</head>
+<body>
+    <h1>Async Code | Basics</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // What to do once after timeout reaches, here 2 seconds --> can be written in two ways
+    // setTimeout(function(){
+    //     console.log("Shikha")
+    // },2000)
+
+    const sayName = function(){
+        console.log("Shikha")
+    }
+    setTimeout(sayName,2000);
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="Five seconds lapsed!"
+    }
+
+    const stopTimeoutOnEvent = setTimeout(changeText,5000);
+
+    // Stop timeout on event
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(stopTimeoutOnEvent);
+        console.log("5 seconds Timeout stopped!")
+    })
+
+</script>
+</html>
